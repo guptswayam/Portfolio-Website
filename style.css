@@ -1,0 +1,227 @@
+.topnav{
+    display: flex;
+    color: gray;
+    position:relative;
+    justify-content: space-around;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    padding-left: 20px;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+}
+.dropdownicon{
+    display: none;
+}
+.container1 img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container1 h1{
+    font-weight: 200;
+}
+.container2{
+    margin: 20px 0;
+    padding: 30px 0;
+    background-color: #d7d8d9;
+}
+.media-object{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    padding: 40px 0;
+    align-items: center;
+}
+.container2 img{
+    max-width: 120px;
+    flex: 1;
+    display: block;
+    margin: auto;
+}
+.container2 .content-wrapper{
+    flex: 1;
+    text-align: center;
+}
+.container2 .img-wrapper{
+    flex: 1;
+}
+.container2 .img-wrapper-right{
+    order: 2;
+    flex: 1;
+}
+.container2 .content-wrapper-left{
+    order:1;
+    flex: 1;
+    text-align: center;
+}
+.container2 p{
+    font-style: italic;
+}
+.btn{
+    background-color: #4f95d3;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 2%;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 2px 5px black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.container3{
+    width: 75%;
+    margin: auto;
+}
+.container3 h1{
+    font-weight: 500;
+    text-align: center;
+    line-height: 3;
+}
+.portfolio-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio-box img{
+    max-width: 190px;
+    max-height: 200px;
+    transition: .2s ease-in-out;
+/*    background-color: #b5b5b5;*/
+}
+.portfolio-box img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.portfolio-object{
+    max-width: 190px;
+    padding: 10px 10px;
+}
+.portfolio-object h3{
+    text-align: center;
+    line-height: 1;
+    margin: 5px;
+    font-family: serif;
+}
+.container4{
+    background: #d7d8d9;
+    padding-bottom: 20px;
+}
+.contact-us{
+    width: 75%;
+    margin: auto;
+}
+.contact-us h2{
+    text-align: center;
+    padding-top: 30px;
+}
+.form-group{
+    padding: 1% 20%;
+}
+.form-group input{
+    width: 100%;
+    border: 1px solid gray;
+    line-height: 1.5;
+    padding-left: 5px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+.form-group textarea{
+    line-height: 1.5;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 5px;
+}
+.contact-us .btn{
+    display: inline;
+    margin-left: 20%;
+}
+.btn:hover{
+    transform: scale(1.05);
+    transition: .2s ease-in-out;
+}
+@media screen and (max-width:768px)
+{
+    .topnav{
+        justify-content: space-between;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    ul.navbar li.items{
+        display: none;
+    }
+    .dropdownicon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0; 
+    }
+    .media-object{
+        flex-direction: column;
+        width: 100%;
+    }
+    .container2{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .container2 .img-wrapper-right{
+        order: 1;
+    }
+    .container2 .content-wrapper-left{
+        order:2;
+    }
+    .container2 .img-wrapper-right,.container2 .img-wrapper{
+        margin-bottom: 30px;
+    }
+/*
+    .portfolio-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+*/
+    .contact-us{
+        width: 100%;
+    }
+    .form-group{
+        padding: 2% 1%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+/*
+    .form-group input{
+        width: 98%;
+    }
+    .form-group textarea{
+        width: 98%;
+    }
+*/
+    .contact-us .btn{
+        display: block;
+        margin: auto;
+    }
+}
+ul.navbarresponsive li.items{
+    margin-top: 15px;
+    text-align: right;
+}
